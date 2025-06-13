@@ -67,6 +67,7 @@ function App() {
         <Route path="/Q9" element={<Question9 />} />
         <Route path="/Q10" element={<Question10 />} />
          <Route path="/Q11" element={<Question11 />} />
+          <Route path="*" element={<Navigate to="/Q1" />} />
    </Routes>
     </>
   );

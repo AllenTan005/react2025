@@ -1,8 +1,12 @@
 import { useState, useEffect, use } from "react";
 import {  Link } from 'react-router-dom';
-
+import Editor from 'react-simple-code-editor';
 
 const question1 = () => {
+
+   const [code, setCode] = useState(
+    `function add(a, b) {\n  return a + b;\n}`
+  );
 
 const users = [
   { firstName: 'Allen', lastName: 'Tan', customerID: '002', note: '', profession: 'student' },
@@ -63,6 +67,10 @@ const professionOrder = {
             
               <Link to="/Q2">Next</Link>
            
+         </div>
+         <p>Code</p>
+         <div>
+
          </div>
     </div>;
 };
