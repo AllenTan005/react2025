@@ -14,9 +14,15 @@
  
 .container ol.shop-list  li.item {
  /*  Q1. Explain why does this color not works, and how to fix make it work on 1st list */
+ /* The green color is applied using .shop-list li.item.
+I want to make only the first list blue, so I use ol.shop-list li.item.
+This selector is more specific and will override the green one.
+So it works as expected. */
  color: blue;
 }
 .container .shop-list li.item:nth-child(odd) {
+  /* I use li.item:nth-child(odd) to give background color to every other line.
+So lines 1, 3, 5... will have a gray background. */
   background-color: #e0e0e0;
 }
  /* Q2. Write styling make every other line give background color to next one */

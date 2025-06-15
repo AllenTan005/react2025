@@ -130,7 +130,7 @@ const question8 = () => {
         textAlign: 'center',
         color: '#777'
       }}>
-        篩選課程 (功能待開發)
+        <a href="https://github.com/AllenTan005/react2025/blob/main/src/components/question8.jsx" target="_blank" rel="noopener noreferrer" >code here</a>
       </div>
   
     </div>

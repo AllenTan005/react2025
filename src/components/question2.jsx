@@ -21,7 +21,19 @@ const question2 = () => {
  </ul>
  </div>
  <div class="footer">以上僅共參考</div>
+           <div style={{
+        marginTop: '25px',
+        padding: '15px',
+        backgroundColor: '#f8f8f8',
+        border: '1px dashed #ccc',
+        borderRadius: '8px',
+        textAlign: 'center',
+        color: '#777',
+        marginBottom: '25px'
+      }}>
+              <a href="https://github.com/AllenTan005/react2025/blob/main/src/styles.css" target="_blank" rel="noopener noreferrer" >code here</a>
 
+      </div>
       <div style={{ display:"flex", justifyContent:"space-between" }} >
         
               <Link to="/Q1">Previous</Link>

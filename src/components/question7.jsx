@@ -79,6 +79,7 @@ export default function TaskManager() {
         <p>
             Explaination: To fix this, I needed to 'lift the state up.' Instead of each TaskCounter component managing its own tasks count, the main TaskManager component (the parent) should be responsible for holding the tasks state for both Alice and Bob.
          </p>
+         <a href="https://github.com/AllenTan005/react2025/blob/main/src/components/question7.jsx" target="_blank" rel="noopener noreferrer" >code here</a>
          <div style={{ display:"flex", justifyContent:"space-between" }} >
              
                   <Link to="/Q6">Previous</Link>

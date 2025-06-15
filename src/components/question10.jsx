@@ -1,7 +1,5 @@
-import { useRef } from 'react'; // Import useRef
+import { useRef } from 'react';
 
-// SearchButton component
-// It now receives a prop 'onSearchClick' which is a function to call when clicked.
 function SearchButton({ onSearchClick }) {
   return (
     <button onClick={onSearchClick}
@@ -20,12 +18,10 @@ function SearchButton({ onSearchClick }) {
   );
 }
 
-// SearchInput component
-// It now receives a prop 'inputRef' which is the ref created in the parent.
 function SearchInput({ inputRef }) {
   return (
     <input
-      ref={inputRef} // Attach the ref to the actual input DOM element
+      ref={inputRef}
       type="text"
       placeholder="Type to search..."
       style={{
@@ -39,25 +35,26 @@ function SearchInput({ inputRef }) {
   );
 }
 
-// Parent Page component
+
 export default function Page() {
-  // 1. Create a ref using useRef. This ref will point to the input element.
+
   const inputRef = useRef(null);
 
-  // Function to handle the search button click
+
   const handleSearchClick = () => {
-    // 3. Access the input DOM element via the ref and call its focus() method.
+  
     if (inputRef.current) {
       inputRef.current.focus();
     }
   };
 
   return (
+    <div>
     <div style={{
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',
-      minHeight: '100vh',
+      minHeight: '80vh',
       backgroundColor: '#f0f2f5'
     }}>
       <div style={{
@@ -68,10 +65,25 @@ export default function Page() {
         display: 'flex',
         alignItems: 'center'
       }}>
-        {/* 2. Pass the ref to SearchInput */}
+      
         <SearchInput inputRef={inputRef} />
-        {/* Pass the handler to SearchButton */}
+   
         <SearchButton onSearchClick={handleSearchClick} />
+      </div>
+      
+    </div>
+              <div style={{
+        marginTop: '25px',
+        padding: '15px',
+        backgroundColor: '#f8f8f8',
+        border: '1px dashed #ccc',
+        borderRadius: '8px',
+        textAlign: 'center',
+        color: '#777',
+        marginBottom: '25px'
+      }}>
+              <a href="https://github.com/AllenTan005/react2025/blob/main/src/components/question10.jsx" target="_blank" rel="noopener noreferrer" >code here</a>
+
       </div>
     </div>
   );
