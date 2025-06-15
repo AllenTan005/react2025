@@ -10,10 +10,10 @@ function ParentComponent() {
   const user = { name, age };
 
   return (
-    // 2. 提供資料給整個 Context
+  
     <UserContext.Provider value={user}>
       <ChildComponent />
-      {/* 不用直接傳 props 了！ */}
+ 
     </UserContext.Provider>
   );
 }
@@ -28,7 +28,7 @@ function ChildComponent() {
 }
 
 function GrandchildComponent() {
-  // 3. 直接用 useContext 拿資料 ✨
+
   const { name, age } = useContext(UserContext);
 
   return (

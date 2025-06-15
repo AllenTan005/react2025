@@ -5,14 +5,14 @@ import {  Link } from 'react-router-dom';
 function TodoItem({ todo, onToggle }) {
   return (
     <li
-      key={todo.id} // Always use a key when rendering lists in React!
+      key={todo.id}
       style={{
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'space-between',
         padding: '10px 0',
         borderBottom: '1px solid #eee',
-        // Apply line-through style if todo is completed
+      
         textDecoration: todo.completed ? 'line-through' : 'none',
         color: todo.completed ? '#888' : '#333',
       }}
@@ -21,7 +21,7 @@ function TodoItem({ todo, onToggle }) {
         <input
           type="checkbox"
           checked={todo.completed}
-          onChange={() => onToggle(todo.id)} // Call the parent's toggle function
+          onChange={() => onToggle(todo.id)} 
           style={{ marginRight: '10px', transform: 'scale(1.2)' }}
         />
         <span style={{ fontSize: '16px', fontWeight: 'bold' }}>{todo.text}</span>
@@ -40,9 +40,9 @@ const question8 = () => {
     { id: 2, text: "建立專案", completed: false, studyPoint: 1 },
   ]);
 
-  //const { id, text, studyPoint } = todos;
+
   const [basePoints, setbasePoints] = useState(3);
-  //const [sumPoints, setSumPoints] = useState(0);
+
 
   const totalStudyPointsFromTodos = todos.reduce((sum, todo) => sum + todo.studyPoint, 0);
   const sumPoints = basePoints + totalStudyPointsFromTodos;
@@ -93,10 +93,10 @@ const question8 = () => {
         </label>
         <input
           id="basePointsInput"
-          type="number" // Use type="number" for numerical inputs
-          value={basePoints} // CONTROLLED COMPONENT: input value tied to state
+          type="number" 
+          value={basePoints} 
           onChange={handleStudyPointsChange}
-          min="0" // Optional: set a minimum value
+          min="0" 
           style={{
             padding: '10px',
             borderRadius: '5px',
@@ -114,7 +114,7 @@ const question8 = () => {
 
       <h3 style={{ color: '#2c3e50', marginBottom: '15px' }}>課程列表:</h3>
       <ul style={{ listStyle: 'none', padding: 0 }}>
-        {/* IMPROVEMENT 3: Iterate over the todos array to render each TodoItem */}
+     
         {todos.map(todo => (
           <TodoItem key={todo.id} todo={todo} onToggle={toggleTodo} />
         ))}
