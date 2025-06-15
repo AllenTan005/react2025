@@ -83,30 +83,41 @@ const UserSorter = () => {
     <div style={{ padding: "1rem" }}>
       <h2>Q1. Sorted by FullName + CustomerID console.log to see result</h2>
 
-      <div style={{ display: "flex", justifyContent: "space-between" ,      marginTop: '25px',
-        padding: '15px',
-        backgroundColor: '#f8f8f8',
-        border: '1px dashed #ccc',
-        borderRadius: '8px',
-        textAlign: 'center',
-        color: '#777',
-        marginBottom: '25px' }}>
-        <Link
-        
-        to="/Q2">Next question click here proceed to Q2</Link>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+          marginTop: "25px",
+          padding: "15px",
+          backgroundColor: "#f8f8f8",
+          border: "1px dashed #ccc",
+          borderRadius: "8px",
+          textAlign: "center",
+          color: "#777",
+          marginBottom: "25px",
+        }}
+      >
+        <Link to="/Q2">Next question click here proceed to Q2</Link>
       </div>
-                    <div style={{
-        marginTop: '25px',
-        padding: '15px',
-        backgroundColor: '#f8f8f8',
-        border: '1px dashed #ccc',
-        borderRadius: '8px',
-        textAlign: 'center',
-        color: '#777',
-        marginBottom: '25px'
-      }}>
-              <a href="https://github.com/AllenTan005/react2025/blob/main/src/components/question1.jsx" target="_blank" rel="noopener noreferrer" >code here</a>
-
+      <div
+        style={{
+          marginTop: "25px",
+          padding: "15px",
+          backgroundColor: "#f8f8f8",
+          border: "1px dashed #ccc",
+          borderRadius: "8px",
+          textAlign: "center",
+          color: "#777",
+          marginBottom: "25px",
+        }}
+      >
+        <a
+          href="https://github.com/AllenTan005/react2025/blob/main/src/components/question1.jsx"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          code here
+        </a>
       </div>
       <div></div>
     </div>
