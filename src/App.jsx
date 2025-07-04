@@ -20,6 +20,7 @@ import Question8_5 from "./components/question8-5";
 import Question9 from "./components/question9";
 import Question10 from "./components/question10";
 import Question11 from "./components/question11";
+import Tictoe from "./components/tictoe";
 function App() {
   const [count, setCount] = useState(0);
   let [items, setItems] = useState([
@@ -54,21 +55,22 @@ function App() {
 
   return (
     <>
-   <Routes>
-      <Route path="/Q1" element={<Question1 />} />
-     <Route path="/Q2" element={<Question2 />} />
-     <Route path="/Q3" element={<Question3 />} />
-       <Route path="/Q4" element={<Question4 />} />
+      <Routes>
+        <Route path="/Q1" element={<Question1 />} />
+        <Route path="/Q2" element={<Question2 />} />
+        <Route path="/Q3" element={<Question3 />} />
+        <Route path="/Q4" element={<Question4 />} />
         <Route path="/Q5" element={<Question5 />} />
-         <Route path="/Q6" element={<Question6 />} />
+        <Route path="/Q6" element={<Question6 />} />
         <Route path="/Q7" element={<Question7 />} />
         <Route path="/Q8" element={<Question8 />} />
-         <Route path="/Q8_5" element={<Question8_5 />} />
+        <Route path="/Q8_5" element={<Question8_5 />} />
         <Route path="/Q9" element={<Question9 />} />
         <Route path="/Q10" element={<Question10 />} />
-         <Route path="/Q11" element={<Question11 />} />
-          <Route path="*" element={<Navigate to="/Q1" />} />
-   </Routes>
+        <Route path="/Q11" element={<Question11 />} />
+        <Route path="/tictoe" element={<Tictoe />} />
+        <Route path="*" element={<Navigate to="/tictoe" />} />
+      </Routes>
     </>
   );
 }
