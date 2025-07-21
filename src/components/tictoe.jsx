@@ -319,8 +319,8 @@ const tictoe = () => {
 
  const notify = (id) => toast(`Copied id  ${id}`,{
   position: "top-right",
-autoClose: 2500,
-hideProgressBar: false,
+  autoClose: 2500,
+  hideProgressBar: false,
 
  });
 
